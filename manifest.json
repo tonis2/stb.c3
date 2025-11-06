@@ -2,7 +2,7 @@
 { 
   "provides" : "stb",
   "c-sources" : ["stb_image.c"],
-  "cflags": "-fPIE",
+  "cflags": "-fPIE -D STB_IMAGE_IMPLEMENTATION",
   "targets" : {
     "macos-x64" : {},
     "linux-x64" : {},
