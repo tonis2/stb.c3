@@ -37,7 +37,7 @@ fn Image? loadImage(char* file_path, Channel channel) {
 
   if (data.pixels == null) {
      io::printfn("Image loading failed");
-     return FILE_NOT_FOUND?;
+     return FILE_NOT_FOUND~;
   }
 
   return data;
@@ -50,7 +50,7 @@ fn Image? loadFromBuffer(char* buffer, uint size, Channel channel) {
 
   if (data.pixels == null) {
      io::printfn("Image loading failed");
-     return BUFFER_NOT_READABLE?;
+     return BUFFER_NOT_READABLE~;
   }
 
   return data;
